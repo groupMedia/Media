@@ -18,6 +18,9 @@ export default {
         'second-bg-web-dark' : '#1A1F2A',
         'third-web-dark' : '#2E313A',
         'main-green-web' : '#0CC13F',
+      },
+      fontFamily:{
+        iransans : ['IRANSans']
       }
     },
   },
