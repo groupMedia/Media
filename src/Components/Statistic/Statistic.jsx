@@ -4,7 +4,7 @@ export default function Statistic({ title, icon, number, Percent, bgcolor , txco
     <>
       <div className="flex flex-col gap-5 bg-second-bg-web-dark p-5 text-white w-full rounded-md ">
         <div className="up flex justify-between items-center">
-          <h4 className="font-light md:font-normal">{title}</h4>
+          <h4 className="text-main-gray-text-admin text-sm md:text-base">{title}</h4>
           <div
             className={` w-10 h-10 rounded-full flex justify-center items-center ${bgcolor}`}
           >

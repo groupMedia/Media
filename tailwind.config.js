@@ -12,6 +12,7 @@ export default {
         'main-blue-admin': '#007AFF',
         'main-green-admin': '#14E788',
         'main-gray-admin': '#858EA3',
+        'main-gray-text-admin': '#d1d0cf',
 
         'main-orang-web' : '#FF9800',
         'main-bg-web-dark' : '#0D121E',
