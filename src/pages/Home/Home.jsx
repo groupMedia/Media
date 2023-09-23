@@ -1,9 +1,9 @@
 import React from 'react'
-import TopBar from '../../Components/PanelAdmin/TopBar/TopBar'
+import SideBar from '../../Components/PanelAdmin/SideBar/SideBar'
 export default function Home() {
   return (
     <div>
-      <TopBar/>
+      <SideBar/>
     </div>
   )
 }
