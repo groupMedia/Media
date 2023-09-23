@@ -5,7 +5,9 @@ export default function App() {
   let router = useRoutes(routes)
   return (
     <>
+    <div className='bg-main-bg-web-dark font-iransans'>
     {router}
+    </div>
     </>
   )
 }
