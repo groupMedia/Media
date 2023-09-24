@@ -5,6 +5,7 @@ import DashboardSlider from "../../Components/PanelAdmin/DashboardSlider/Dashboa
 export default function Home() {
   return (
     <div className="">
+
       <div>
         <SideBar />
       </div>

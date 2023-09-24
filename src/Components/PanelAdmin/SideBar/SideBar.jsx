@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import TopBar from "../TopBar/TopBar";
 import MenuIcon from "@mui/icons-material/Menu";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import CloseIcon from "@mui/icons-material/Close";
@@ -78,12 +79,14 @@ export default function SideBar() {
 
   return (
     <div>
+      
       {showLeftBar ? (
         <div>
           <div
             className={`fixed top-0 right-0 ${
               showMenu ? "w-[50%] h-full" : "w-[100%]"
-            } bg-[#1d1d1d] z-40 text-white p-4 transition-all duration-700`}
+            } bg-second-bg-web-dark z-50 text-white p-4 transition-all duration-700 `}
+            
           >
             <div className="flex gap-5 items-center">
               <button
@@ -198,12 +201,12 @@ export default function SideBar() {
                       {showSubMenu ? (
                         <KeyboardArrowDownIcon
                           fontSize=""
-                          className="mr-[100px]"
+                          className="mr-[95px]"
                         />
                       ) : (
                         <KeyboardArrowLeftIcon
                           fontSize=""
-                          className="mr-[100px]"
+                          className="mr-[95px]"
                         />
                       )}
                     </div>
@@ -245,12 +248,12 @@ export default function SideBar() {
                       {showSubMenu2 ? (
                         <KeyboardArrowDownIcon
                           fontSize=""
-                          className="mr-[120px]"
+                          className="mr-[115px]"
                         />
                       ) : (
                         <KeyboardArrowLeftIcon
                           fontSize=""
-                          className="mr-[120px]"
+                          className="mr-[115px]"
                         />
                       )}
                     </div>
@@ -295,12 +298,12 @@ export default function SideBar() {
                       {showSubMenu3 ? (
                         <KeyboardArrowDownIcon
                           fontSize=""
-                          className="mr-[105px]"
+                          className="mr-[100px]"
                         />
                       ) : (
                         <KeyboardArrowLeftIcon
                           fontSize=""
-                          className="mr-[105px]"
+                          className="mr-[100px]"
                         />
                       )}
                     </div>
@@ -330,32 +333,35 @@ export default function SideBar() {
             )}
           </div>
           {showMedia && (
-            <div className="h-[70px] w-[400px] mr-7 bg-[#2b292b44] mt-[75px] rounded-3xl">
-              <ul className="flex justify-around items-center">
-                <div className="mt-2 cursor-pointer">
-                  <img
-                    src="Images/Profile.jpg"
-                    alt=""
-                    className="rounded-[50%] w-12"
-                  />
-                </div>
-                <li>
-                  <a href="#">
-                    <SearchIcon className="cursor-pointer hover:text-main-orang-admin " />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <NotificationsNoneIcon className="cursor-pointer hover:text-main-orang-admin " />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <MailOutlineIcon className="cursor-pointer hover:text-main-orang-admin " />
-                  </a>
-                </li>
-              </ul>
-            </div>
+            <div className="h-[70px] w-[380px] mr-7 bg-second-bg-web-dark rounded-3xl">
+              <div className="mt-[62px] z-20">
+                    <ul className="flex justify-around items-center ">
+              <div className="mt-2 cursor-pointer">
+                <img
+                  src="Images/Profile.jpg"
+                  alt=""
+                  className="rounded-[50%] w-12"
+                />
+              </div>
+              <li>
+                <a href="#">
+                  <SearchIcon className="cursor-pointer hover:text-main-orang-admin text-white " />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <NotificationsNoneIcon className="cursor-pointer hover:text-main-orang-admin text-white " />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <MailOutlineIcon className="cursor-pointer hover:text-main-orang-admin  text-white" />
+                </a>
+              </li>
+            </ul>
+              </div>
+        
+          </div>
           )}
         </div>
       ) : null}
