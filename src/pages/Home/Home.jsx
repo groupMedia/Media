@@ -1,8 +1,7 @@
 import React from "react";
 import TopBar from "./../../Components/PanelAdmin/TopBar/TopBar"
 import SideBar from "../../Components/PanelAdmin/SideBar/SideBar";
-import Statistics from "../../Components/statistics/statistics";
-import DashboardSlider from "../../Components/PanelAdmin/DashboardSlider/DashboardSlider";
+import AdminPanel from "../AdminPanel/Dashboard/AdminPanel";
 export default function Home() {
   return (
     <div className="">
@@ -12,12 +11,7 @@ export default function Home() {
       <div>
         <SideBar />
       </div>
-      <div>
-        <Statistics></Statistics>
-      </div>
-      <div>
-        <DashboardSlider></DashboardSlider>
-      </div>
+      <AdminPanel></AdminPanel>
     </div>
   );
 }
