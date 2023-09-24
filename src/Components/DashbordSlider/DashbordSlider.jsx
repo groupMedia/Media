@@ -2,7 +2,7 @@ import React from "react";
 
 export default function DashbordSlider() {
   return (
-    <div>
+    <div className="">
       <div>
         <div className="img">
           <img src="./Images/DashbordSlider/1.jpg" alt="" />
