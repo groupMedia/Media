@@ -216,7 +216,7 @@ export default function SideBar() {
                           <div className="flex  mt-6  hover:text-main-orang-admin  ">
                             <PersonAddAltIcon fontSize="" />
                             <li className=" text-[14px] cursor-pointer mr-1 ">
-                              <a href="#">اضافه کردن دسته جدید</a>
+                              <a href="#" onClick={() => {console.log("hello");}}>اضافه کردن دسته جدید</a>
                             </li>
                           </div>
 
