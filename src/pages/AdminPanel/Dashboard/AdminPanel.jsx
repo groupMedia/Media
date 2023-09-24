@@ -1,6 +1,6 @@
 import React from 'react'
 import Statistics from '../../../Components/statistics/statistics'
-import DashboardSlider from '../../../Components/PanelAdmin/DashboardSlider/DashboardSlider'
+import DashboardSlider from '../../../Components/PanelAdmin/DashboardSliders/DashboardSliders'
 
 export default function AdminPanel() {
   return (
@@ -8,7 +8,7 @@ export default function AdminPanel() {
       <div>
         <Statistics></Statistics>
       </div>
-      <div>
+      <div className='px-8'>
         <DashboardSlider></DashboardSlider>
       </div>
     </div>
