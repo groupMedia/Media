@@ -18,9 +18,9 @@ export default function DashboardSliders() {
   const swiperRef = useRef(null);
   return (
     <>
-      <div className="bg-second-bg-web-dark">
+      <div className="bg-second-bg-web-dark rounded-md mx-8 p-5">
         <div className="flex flex-col justify-center items-center md:items-start">
-          <div className="py-5 text-xl w-full flex justify-between px-5">
+          <div className="py-5 text-xl w-full md:flex md:justify-between text-center px-5">
             <h4>محبوب ترین آیتم ها</h4>
             <div className="hidden md:flex justify-center items-center gap-5">
               <div onClick={() => swiperRef.current.slideNext()} className="nextEl w-8 h-8 bg-main-red-admin rounded-md flex justify-center items-center text-3xl">
