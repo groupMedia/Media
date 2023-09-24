@@ -24,10 +24,10 @@ export default function DashboardSliders() {
             <h4>محبوب ترین آیتم ها</h4>
             <div className="hidden md:flex justify-center items-center gap-5">
               <div onClick={() => swiperRef.current.slideNext()} className="nextEl w-8 h-8 bg-main-red-admin rounded-md flex justify-center items-center text-3xl">
-                <i class='bx bxs-right-arrow-alt'></i>
+                <i className='bx bxs-right-arrow-alt'></i>
               </div>
               <div onClick={() => swiperRef.current.slidePrev()} className="prevEl w-8 h-8 bg-main-red-admin rounded-md flex justify-center items-center text-3xl">
-                <i class='bx bxs-left-arrow-alt'></i>
+                <i className='bx bxs-left-arrow-alt'></i>
               </div>
             </div>
           </div>

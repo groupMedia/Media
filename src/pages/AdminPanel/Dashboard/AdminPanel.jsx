@@ -1,6 +1,7 @@
 import React from "react";
 import Statistics from "../../../Components/statistics/statistics";
 import DashboardSlider from "../../../Components/PanelAdmin/DashboardSliders/DashboardSliders";
+import ChartUaersAdmin from "../../../Components/ChartUaersAdmin/ChartUaersAdmin";
 
 export default function AdminPanel() {
   return (
@@ -14,7 +15,9 @@ export default function AdminPanel() {
           <DashboardSlider></DashboardSlider>
         </div>
       </div>
-      <div>mohammad</div>
+      <div className="">
+        <ChartUaersAdmin></ChartUaersAdmin>
+      </div>
     </div>
     </>
   );
