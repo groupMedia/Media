@@ -24,10 +24,10 @@ export default function TopBar() {
   return (
     <>
       {isMobile ? null : (
-        <div className="text-white">
-          <div className="w-[100%] h-[80px] bg-second-bg-web-dark">
-            <div className="flex justify-end items-center gap-7 ml-5">
-              <div className="relative w-[400px] mt-5">
+        <div className="text-white relative">
+          <div className=" bg-second-bg-web-dark fixed top-0 left-0 right-0">
+            <div className="flex justify-end items-center gap-7 ml-10 h-[70px]">
+              <div className="relative w-[400px]">
                 <input
                   type="text"
                   placeholder="اینجا جستجو کنید..."
@@ -37,16 +37,16 @@ export default function TopBar() {
                   <SearchIcon className="text-[#fff]" />
                 </div>
               </div>
-              <a href="#" className="mt-5">
+              <a href="#" className="">
                 <MailOutlineIcon fontSize="small" className="" />
               </a>
-              <a href="#" className="mt-5">
+              <a href="#" className="">
                 <NotificationsNoneIcon fontSize="small" className="" />
               </a>
               <img
                 src="./Images/Profile.jpg"
                 alt=""
-                className="rounded-[50%] w-[45px] mt-4"
+                className="rounded-[50%] w-[45px]"
               />
             </div>
           </div>
