@@ -2,6 +2,7 @@ import React from "react";
 import Statistics from "../../../Components/statistics/statistics";
 import DashboardSlider from "../../../Components/PanelAdmin/DashboardSliders/DashboardSliders";
 import ChartUaersAdmin from "../../../Components/ChartUaersAdmin/ChartUaersAdmin";
+import ChartGrouping from "../../../Components/ChartGrouping/ChartGrouping";
 
 export default function Dashboard() {
   return (
@@ -19,6 +20,9 @@ export default function Dashboard() {
           <ChartUaersAdmin></ChartUaersAdmin>
         </div>
       </div>
+        <div>
+          <ChartGrouping></ChartGrouping>
+        </div>
     </>
   );
 }
