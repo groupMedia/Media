@@ -20,14 +20,14 @@ export default function DashboardSliders() {
     <>
       <div className="bg-second-bg-web-dark rounded-md mx-8 p-5">
         <div className="flex flex-col justify-center items-center md:items-start">
-          <div className="py-5 text-xl w-full md:flex md:justify-between text-center px-5">
+          <div className="py-5 text-xl w-full md:flex md:justify-between text-center px-5 border-b border-main-bg-web-dark mb-2">
             <h4>محبوب ترین آیتم ها</h4>
             <div className="hidden md:flex justify-center items-center gap-5">
-              <div onClick={() => swiperRef.current.slideNext()} className="nextEl w-8 h-8 bg-main-red-admin rounded-md flex justify-center items-center text-3xl">
-                <i class='bx bxs-right-arrow-alt'></i>
+              <div onClick={() => swiperRef.current.slideNext()} className="nextEl w-8 h-8 bg-main-red-admin rounded-md flex justify-center items-center text-3xl cursor-pointer">
+                <i className='bx bxs-right-arrow-alt'></i>
               </div>
-              <div onClick={() => swiperRef.current.slidePrev()} className="prevEl w-8 h-8 bg-main-red-admin rounded-md flex justify-center items-center text-3xl">
-                <i class='bx bxs-left-arrow-alt'></i>
+              <div onClick={() => swiperRef.current.slidePrev()} className="prevEl w-8 h-8 bg-main-red-admin rounded-md flex justify-center items-center text-3xl cursor-pointer">
+                <i className='bx bxs-left-arrow-alt'></i>
               </div>
             </div>
           </div>
@@ -36,6 +36,7 @@ export default function DashboardSliders() {
           <Swiper
             ref={swiperRef}
             // navigation={true}
+            loop={true}
             navigation={{
               prevEl: ".prevEl",
               nextEl: ".nextEl",
@@ -52,17 +53,27 @@ export default function DashboardSliders() {
                 spaceBetween: 20,
               },
               768: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 spaceBetween: 30,
               },
               1024: {
                 slidesPerView: 3,
+                spaceBetween: 30,
+              },
+              1200: {
+                slidesPerView: 4,
                 spaceBetween: 40,
               },
             }}
           >
             
 
+            <SwiperSlide>
+              <DashbordSlider></DashbordSlider>
+            </SwiperSlide>
+            <SwiperSlide>
+              <DashbordSlider></DashbordSlider>
+            </SwiperSlide>
             <SwiperSlide>
               <DashbordSlider></DashbordSlider>
             </SwiperSlide>
