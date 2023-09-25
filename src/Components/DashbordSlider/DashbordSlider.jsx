@@ -5,7 +5,7 @@ export default function DashbordSlider() {
     <div className="">
       <div>
         <div className="img">
-          <img src="./Images/DashbordSlider/1.jpg" alt="" />
+          <img src="/Images/DashbordSlider/1.jpg" alt="" />
         </div>
         <div className="bg-main-bg-web-dark text-start p-3">
           <div className="up">

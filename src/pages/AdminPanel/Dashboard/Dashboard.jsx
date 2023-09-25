@@ -42,19 +42,10 @@ export default function Dashboard() {
             <div className="lg:col-span-1">
               <ChartGrouping></ChartGrouping>
             </div>
-            <div className="lg:col-span-2">chartfaivarit</div>
+              <div className="lg:col-span-2">
+                <FavoritesChart></FavoritesChart>
+              </div>
           </div>
-        </div>
-        <div className="col-span-1">
-          <ChartUaersAdmin></ChartUaersAdmin>
-        </div>
-      </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 mt-5 gap-8">
-        <div className="lg:col-span-1">
-          <ChartGrouping></ChartGrouping>
-        </div>
-        <div className="lg:col-span-2">
-          <FavoritesChart></FavoritesChart>
         </div>
       </div>
     </>
