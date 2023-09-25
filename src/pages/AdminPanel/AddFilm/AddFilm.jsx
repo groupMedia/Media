@@ -4,7 +4,7 @@ import TopBar from "../../../Components/PanelAdmin/TopBar/TopBar";
 import SideBar from "../../../Components/PanelAdmin/SideBar/SideBar";
 
 
-export default function Comments() {
+export default function AddFilm() {
   return (
     <>
         <div className="grid grid-cols-12  ">
@@ -14,14 +14,14 @@ export default function Comments() {
       </div>
 
       <div className="left xl:col-span-10 2xl:col-span-10 col-span-12 md:mt-24 md:mr-[20px] mt-20  ">
-                  <div>
+             <div>
             <TopBar />
           </div>
           <div>
             <SideBar />
           </div>
-          {/* coding Comments components here/; */}
-          <h1>Comments components</h1>
+          {/* coding AddFilm components here/; */}
+          <h1>AddFilm components</h1>
       </div>
     </div>
     
