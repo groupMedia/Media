@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import TopBar from "../TopBar/TopBar";
+import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import CloseIcon from "@mui/icons-material/Close";
@@ -100,7 +101,7 @@ export default function SideBar() {
                 )}
               </button>
               <img
-                src="Images/logo-light.png"
+                src="/Images/logo-light.png"
                 alt="logo"
                 className="w-[110px] "
               />
@@ -142,7 +143,9 @@ export default function SideBar() {
                     className={`text-[14px] cursor-pointer`}
                     onClick={() => handleMenuItemClick(1)}
                   >
-                    داشبورد
+                  <Link to={"/P-admin/dashboard"}>
+                    <a href="">داشبورد</a>
+                  </Link>
                   </li>
                 </div>
                 <div
@@ -155,7 +158,9 @@ export default function SideBar() {
                     className={`text-[14px] cursor-pointer `}
                     onClick={() => handleMenuItemClick(2)}
                   >
-                    رتبه بندی
+                  <Link to={"/P-admin/level"}>
+                    <a href="">رتبه بندی</a>
+                  </Link>
                   </li>
                 </div>
                 <div
@@ -168,7 +173,9 @@ export default function SideBar() {
                     className={`text-[14px] cursor-pointer `}
                     onClick={() => handleMenuItemClick(3)}
                   >
-                    نظرات
+                  <Link to={"/P-admin/comments"}>
+                    <a href=""> نظرات</a>
+                  </Link>
                   </li>
                 </div>
                 <div
@@ -181,7 +188,9 @@ export default function SideBar() {
                     className={`text-[14px] cursor-pointer `}
                     onClick={() => handleMenuItemClick(4)}
                   >
-                    کاربران
+                  <Link to={"/P-admin/users"}>
+                    <a href=""> کاربران</a>
+                  </Link>
                   </li>
                 </div>
                 <div className="flex ">
@@ -216,14 +225,20 @@ export default function SideBar() {
                           <div className="flex  mt-6  hover:text-main-orang-admin  ">
                             <PersonAddAltIcon fontSize="" />
                             <li className=" text-[14px] cursor-pointer mr-1 ">
-                              <a href="#" onClick={() => {console.log("hello");}}>اضافه کردن دسته جدید</a>
+                              <a href="#" onClick={() => {console.log("hello");}}>
+                              <Link to={"/P-admin/add-group"}>
+                                <a href=""> اضافه کردن دسته بندی</a>
+                              </Link>
+                                </a>
                             </li>
                           </div>
 
                           <div className="flex  mt-6  hover:text-main-orang-admin ">
                             <RemoveRedEyeIcon fontSize="" />
                             <li className=" text-[14px] cursor-pointer mr-1 ">
-                              <a href="#">لیست دسته ها</a>
+                            <Link to={"/P-admin/list-group"}>
+                              <a href=""> لیست دسته ها </a>
+                            </Link>
                             </li>
                           </div>
                         </ul>
@@ -264,14 +279,18 @@ export default function SideBar() {
                           <div className="flex  mt-6  hover:text-main-orang-admin  ">
                             <PersonAddAltIcon fontSize="" />
                             <li className=" text-[14px] cursor-pointer mr-1 ">
-                              <a href="#">اضافه کردن فیلم جدید</a>
+                            <Link to={"/P-admin/add-film"}>
+                              <a href=""> افزودن فیلم </a>
+                            </Link>
                             </li>
                           </div>
 
                           <div className="flex  mt-6  hover:text-main-orang-admin ">
                             <RemoveRedEyeIcon fontSize="" />
                             <li className=" text-[14px] cursor-pointer mr-1 ">
-                              <a href="#">لیست فیلم ها</a>
+                            <Link to={"/P-admin/list-film"}>
+                              <a href="">  لیست فیلم ها </a>
+                            </Link>
                             </li>
                           </div>
                         </ul>
@@ -307,21 +326,25 @@ export default function SideBar() {
                         />
                       )}
                     </div>
-
+                                                  
                     {showSubMenu3 && (
                       <div className="">
                         <ul>
                           <div className="flex  mt-6  hover:text-main-orang-admin  ">
                             <PersonAddAltIcon fontSize="" />
                             <li className=" text-[14px] cursor-pointer mr-1 ">
-                              <a href="#">اضافه کردن نمایش جدید</a>
+                            <Link to={"/P-admin/add-display"}>
+                            افزودن نمایش
+                           </Link>
                             </li>
                           </div>
 
                           <div className="flex  mt-6  hover:text-main-orang-admin ">
                             <RemoveRedEyeIcon fontSize="" />
                             <li className=" text-[14px] cursor-pointer mr-1 ">
-                              <a href="#">لیست نمایش ها</a>
+                            <Link to={"/P-admin/list-display"}>
+                            لیست نمایش ها
+                           </Link>
                             </li>
                           </div>
                         </ul>
@@ -338,7 +361,7 @@ export default function SideBar() {
                     <ul className="flex justify-around items-center ">
               <div className="mt-2 cursor-pointer">
                 <img
-                  src="Images/Profile.jpg"
+                  src="/Images/Profile.jpg"
                   alt=""
                   className="rounded-[50%] w-12"
                 />

@@ -17,7 +17,7 @@ export default function Dashboard() {
           <SideBarDesk />
         </div>
 
-        <div className="left xl:col-span-10 2xl:col-span-10 col-span-12 md:mt-24 md:mr-[20px] ">
+        <div className="left xl:col-span-10 2xl:col-span-10 col-span-12 md:mt-24 md:mr-[20px] mt-10 ">
           <div>
             <TopBar />
           </div>
