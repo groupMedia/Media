@@ -1,5 +1,4 @@
-import IndexAdminPage from "./pages/Home/IndexAdminPage/IndexAdminPage";
-import Home from "./pages/Home/Home";
+import IndexAdminPage from "./pages/AdminPanel/IndexAdminPage/IndexAdminPage";
 import Comments from "./pages/AdminPanel/Comments/Comments";
 import Dashboard from "./pages/AdminPanel/Dashboard/Dashboard";
 import AddGroup from "./pages/AdminPanel/AddGroup/AddGroup";
@@ -12,23 +11,17 @@ import AddDisplay from "./pages/AdminPanel/AddDisplay/AddDisplay";
 import ListDisplay from "./pages/AdminPanel/ListDisplay/ListDisplay";
 
 let routes = [
-  { path: "/", element: <Home /> },
-  {
-    path: "/P-admin/*",
-    element: <IndexAdminPage />,
-    children: [
-      { path: "dashboard", element: <Dashboard /> },
-      { path: "level", element: <Level /> },
-      { path: "comments", element: <Comments /> },
-      { path: "users", element: <Users /> },
-      { path: "add-group", element: <AddGroup /> },
-      { path: "list-group", element: <ListGroup /> },
-      { path: "add-film", element: <AddFilm /> },
-      { path: "list-film", element: <ListFilm /> },
-      { path: "add-display", element: <AddDisplay /> },
-      { path: "list-display", element: <ListDisplay /> },
-    ],
-  },
+  { path: "/P-admin", element: <IndexAdminPage />},
+  { path: "/P-admin/dashboard", element: <Dashboard /> },
+  { path: "/P-admin/level", element: <Level /> },
+  { path: "/P-admin/comments", element: <Comments /> },
+  { path: "/P-admin/users", element: <Users /> },
+  { path: "/P-admin/add-group", element: <AddGroup /> },
+  { path: "/P-admin/list-group", element: <ListGroup /> },
+  { path: "/P-admin/add-film", element: <AddFilm /> },
+  { path: "/P-admin/list-film", element: <ListFilm /> },
+  { path: "/P-admin/add-display", element: <AddDisplay /> },
+  { path: "/P-admin/list-display", element: <ListDisplay /> },
 ];
 
 export default routes;

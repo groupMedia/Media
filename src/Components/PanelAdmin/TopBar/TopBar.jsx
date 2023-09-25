@@ -24,7 +24,7 @@ export default function TopBar() {
   return (
     <>
       {isMobile ? null : (
-        <div className="text-white relative">
+        <div className="text-white relative z-40">
           <div className=" bg-second-bg-web-dark fixed top-0 left-0 right-0">
             <div className="flex justify-end items-center gap-7 ml-10 h-[70px]">
               <div className="relative w-[400px]">
@@ -44,7 +44,7 @@ export default function TopBar() {
                 <NotificationsNoneIcon fontSize="small" className="" />
               </a>
               <img
-                src="./Images/Profile.jpg"
+                src="/Images/Profile.jpg"
                 alt=""
                 className="rounded-[50%] w-[45px]"
               />
