@@ -3,6 +3,7 @@ import Statistics from "../../../Components/Statistics/Statistics";
 import DashboardSlider from "../../../Components/PanelAdmin/DashboardSliders/DashboardSliders";
 import ChartUaersAdmin from "../../../Components/ChartUaersAdmin/ChartUaersAdmin";
 import ChartGrouping from "../../../Components/ChartGrouping/ChartGrouping";
+import FavoritesChart from "../../../Components/FavoritesChart/FavoritesChart";
 
 export default function Dashboard() {
   return (
@@ -20,12 +21,12 @@ export default function Dashboard() {
           <ChartUaersAdmin></ChartUaersAdmin>
         </div>
       </div>
-      <div className="lg:grid lg:grid-cols-3 mt-5">
+      <div className="grid grid-cols-1 lg:grid-cols-3 mt-5 gap-8">
         <div className="lg:col-span-1">
           <ChartGrouping></ChartGrouping>
         </div>
         <div className="lg:col-span-2">
-          chartfaivarit
+          <FavoritesChart></FavoritesChart>
         </div>
       </div>
     </>
