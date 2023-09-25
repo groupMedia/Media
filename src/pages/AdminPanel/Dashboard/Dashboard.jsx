@@ -1,5 +1,5 @@
 import React from "react";
-import Statistics from "../../../Components/statistics/statistics";
+import Statistics from "../../../Components/Statistics/Statistics";
 import DashboardSlider from "../../../Components/PanelAdmin/DashboardSliders/DashboardSliders";
 import ChartUaersAdmin from "../../../Components/ChartUaersAdmin/ChartUaersAdmin";
 import ChartGrouping from "../../../Components/ChartGrouping/ChartGrouping";
@@ -20,9 +20,14 @@ export default function Dashboard() {
           <ChartUaersAdmin></ChartUaersAdmin>
         </div>
       </div>
-        <div>
+      <div className="lg:grid lg:grid-cols-3 mt-5">
+        <div className="lg:col-span-1">
           <ChartGrouping></ChartGrouping>
         </div>
+        <div className="lg:col-span-2">
+          chartfaivarit
+        </div>
+      </div>
     </>
   );
 }

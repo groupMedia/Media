@@ -62,7 +62,7 @@ export default function DashboardSliders() {
               },
               1200: {
                 slidesPerView: 4,
-                spaceBetween: 40,
+                spaceBetween: 30,
               },
             }}
           >
